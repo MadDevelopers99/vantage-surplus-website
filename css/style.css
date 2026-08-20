@@ -553,6 +553,7 @@ h1,h2,h3,h4{ font-family:var(--ff-head); line-height:1.2; font-weight:700; color
 .product-price{ display:flex; align-items:baseline; gap:8px; }
 .product-price .now{ font-family:var(--ff-head); font-weight:800; color:var(--green-400); font-size:1.05rem; }
 .product-price .was{ font-size:.8rem; color:var(--text-mute); text-decoration:line-through; }
+.price-cta{ font-family:var(--ff-head); font-weight:700; color:var(--gold-400); font-size:.92rem; }
 @media(max-width:1100px){ .product-grid{ grid-template-columns:repeat(3,1fr); } }
 @media(max-width:700px){ .product-grid{ grid-template-columns:repeat(2,1fr); } }
 
