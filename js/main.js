@@ -153,6 +153,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ---- Help modal (homepage) ---- */
+  const helpOverlay = document.getElementById('helpModalOverlay');
+  if (helpOverlay) {
+    const helpClose = document.getElementById('helpModalClose');
+    const openHelpModal = () => helpOverlay.classList.add('show');
+    const closeHelpModal = () => helpOverlay.classList.remove('show');
+
+    if (!sessionStorage.getItem('helpModalShown')) {
+      setTimeout(() => {
+        openHelpModal();
+        sessionStorage.setItem('helpModalShown', '1');
+      }, 4000);
+    }
+
+    helpClose && helpClose.addEventListener('click', closeHelpModal);
+    helpOverlay.addEventListener('click', (e) => {
+      if (e.target === helpOverlay) closeHelpModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeHelpModal();
+    });
+  }
+
   /* ---- Current year ---- */
   document.querySelectorAll('.current-year').forEach(el => el.textContent = new Date().getFullYear());
 });
