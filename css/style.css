@@ -222,7 +222,13 @@ h1,h2,h3,h4{ font-family:var(--ff-head); line-height:1.2; font-weight:700; color
 .marquee-wrap{ padding:34px 0; border-block:1px solid var(--border); background:var(--bg-alt); overflow:hidden; }
 .marquee-wrap p{ text-align:center; font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:var(--text-mute); margin-bottom:18px; }
 .marquee{ display:flex; width:max-content; gap:64px; animation:scroll 26s linear infinite; }
-.marquee span{ font-family:var(--ff-head); font-weight:700; font-size:1.1rem; color:var(--text-mute); white-space:nowrap; opacity:.7; }
+.marquee span{ font-family:var(--ff-head); font-weight:700; font-size:1.1rem; color:var(--text-mute); white-space:nowrap; opacity:.7; display:inline-flex; align-items:center; gap:9px; }
+
+/* ---------- Flag icons ---------- */
+.flag-icon{
+  width:20px; height:14px; object-fit:cover; border-radius:2px; flex-shrink:0;
+  box-shadow:0 0 0 1px rgba(255,255,255,.12);
+}
 @keyframes scroll{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
 
 /* ---------- Stats ---------- */
@@ -454,7 +460,7 @@ h1,h2,h3,h4{ font-family:var(--ff-head); line-height:1.2; font-weight:700; color
 
 /* ---------- Misc reusable ---------- */
 .pill-list{ display:flex; flex-wrap:wrap; gap:10px; }
-.pill{ padding:8px 16px; border:1px solid var(--border); border-radius:999px; font-size:.82rem; color:var(--text-dim); }
+.pill{ padding:8px 16px; border:1px solid var(--border); border-radius:999px; font-size:.82rem; color:var(--text-dim); display:inline-flex; align-items:center; gap:8px; }
 .divider{ height:1px; background:var(--border); margin:70px 0; }
 
 ::selection{ background:var(--green-600); color:#fff; }
