@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('.navbar');
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
+  const backTop = document.querySelector('.back-top');
 
   const onScroll = () => {
     navbar.classList.toggle('scrolled', window.scrollY > 12);
@@ -24,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ---- Back to top ---- */
-  const backTop = document.querySelector('.back-top');
   if (backTop) {
     backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
