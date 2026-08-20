@@ -201,7 +201,7 @@ h1,h2,h3,h4{ font-family:var(--ff-head); line-height:1.2; font-weight:700; color
 .ticker-row b{ font-family:var(--ff-head); font-size:.9rem; }
 .ticker-row small{ display:block; color:var(--text-mute); font-size:.72rem; }
 .ticker-up{ color:var(--green-400); font-weight:700; font-size:.85rem; }
-.ticker-up::before{ content:"▲ "; }
+.ticker-up::before{ content:"✓ "; }
 .floating-chip{
   position:absolute; background:var(--bg-alt); border:1px solid var(--gold-500);
   border-radius:14px; padding:14px 18px; box-shadow:var(--shadow-2);
