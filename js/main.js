@@ -97,6 +97,21 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => setSlide((active + 1) % slides.length), 5000);
   }
 
+  /* ---- Product tabs (Buy page) ---- */
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  if (tabBtns.length) {
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const target = btn.dataset.tab;
+        document.querySelectorAll('.product-grid[data-panel]').forEach(panel => {
+          panel.style.display = panel.dataset.panel === target ? 'grid' : 'none';
+        });
+      });
+    });
+  }
+
   /* ---- FAQ accordion ---- */
   document.querySelectorAll('.faq-item').forEach(item => {
     const q = item.querySelector('.faq-q');

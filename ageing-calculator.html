@@ -3,21 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service | Vantage Surplus Traders</title>
-<meta name="description" content="Terms of Service for Vantage Surplus Traders — the terms governing use of our website and stock evaluation services.">
+<title>Inventory Ageing Calculator | Vantage Surplus Traders</title>
+<meta name="description" content="Estimate how much recoverable value your surplus stock has lost to ageing, and what it could still be worth today.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
-<style>
-  .legal-body{ max-width:800px; margin-inline:auto; }
-  .legal-body h2{ font-size:1.35rem; margin:34px 0 12px; }
-  .legal-body p, .legal-body li{ color:var(--text-dim); font-size:.98rem; margin-bottom:12px; }
-  .legal-body ul{ padding-left:20px; list-style:disc; margin-bottom:16px; }
-  .legal-note{
-    background:rgba(212,175,55,.08); border:1px solid rgba(212,175,55,.35); border-radius:var(--radius-md);
-    padding:18px 22px; font-size:.88rem; color:var(--gold-400); margin-bottom:36px;
-  }
-  .legal-updated{ color:var(--text-mute); font-size:.85rem; margin-bottom:30px; }
-</style>
 </head>
 <body>
 
@@ -46,56 +35,58 @@
 
 <section class="page-header">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Terms of Service</span></div>
-    <h1>Terms of <span class="text-gold">Service</span></h1>
-    <p>The terms governing your use of this website and our stock evaluation services.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Inventory Ageing Calculator</span></div>
+    <h1>Inventory Ageing <span class="text-gold">Calculator</span></h1>
+    <p>See roughly how much recoverable value your idle stock still holds — and how much it's losing every month it stays in storage.</p>
   </div>
 </section>
 
 <section class="section">
-  <div class="container legal-body reveal">
-    <div class="legal-note">
-      Sample Notice: This page is a generic template provided for demonstration purposes as part of a sample website build. Before publishing live, please have these terms reviewed and customized by a licensed legal professional to reflect your actual trading terms and applicable Saudi Arabian law.
+  <div class="container">
+    <div class="calc-box reveal">
+      <div class="calc-row">
+        <label for="calcValue">Original Stock Value (SAR)</label>
+        <input type="number" id="calcValue" min="0" step="100" value="50000" style="width:100%; background:var(--bg-alt); border:1px solid var(--border); border-radius:10px; padding:13px 16px; color:#fff; outline:none;">
+      </div>
+      <div class="calc-row">
+        <label for="calcMonths">Months in Storage: <span class="range-value" id="monthsOut">6</span></label>
+        <input type="range" id="calcMonths" min="0" max="36" value="6">
+      </div>
+      <div class="calc-row">
+        <label for="calcCategory">Stock Category</label>
+        <select id="calcCategory" style="width:100%; background:var(--bg-alt); border:1px solid var(--border); border-radius:10px; padding:13px 16px; color:#fff; outline:none;">
+          <option value="1">Electrical</option>
+          <option value="1.4">Electronics</option>
+          <option value="1.1">Garments</option>
+          <option value="1.3">Cosmetics</option>
+          <option value="0.7">Machinery</option>
+          <option value="0.8">Hardware &amp; Tools</option>
+          <option value="1.4">Computers &amp; Accessories</option>
+          <option value="0.75">Oil &amp; Gas</option>
+        </select>
+      </div>
+
+      <div class="calc-result">
+        <div class="big" id="calcResultValue">SAR 12,600</div>
+        <span>Estimated recoverable value today (<span id="calcResultPct">25.2</span>% of original value)</span>
+      </div>
+      <div class="calc-result" style="margin-top:14px; background:rgba(212,175,55,.08); border-color:rgba(212,175,55,.3);">
+        <div class="big" style="color:var(--gold-400);" id="calcSavings">SAR 4,500</div>
+        <span>Estimated storage cost avoided by selling now instead of waiting another 6 months</span>
+      </div>
+
+      <p class="form-note" style="margin-top:20px; text-align:center;">This is a rough estimate for illustration only — every stock evaluation is priced individually by our specialists.</p>
+      <a href="contact.html" class="btn btn-primary btn-block" style="margin-top:16px;">Get My Real Evaluation</a>
     </div>
-    <p class="legal-updated">Last updated: August 18, 2026</p>
+  </div>
+</section>
 
-    <h2>1. Acceptance of Terms</h2>
-    <p>By accessing or using the Vantage Surplus Traders website, submitting a stock evaluation request, or engaging our services, you agree to be bound by these Terms of Service. If you do not agree, please discontinue use of the website and our services.</p>
-
-    <h2>2. Our Services</h2>
-    <p>Vantage Surplus Traders provides evaluation and purchase of surplus, excess and dead stock inventory across categories including but not limited to electrical, electronics, textiles, industrial machinery, oil &amp; gas equipment, scrap metal and general surplus goods.</p>
-
-    <h2>3. Evaluation &amp; Offers</h2>
-    <ul>
-      <li>Evaluations are provided free of charge and are non-binding until both parties agree on a final offer in writing</li>
-      <li>Offers are based on information and access provided by the seller; final pricing may be adjusted if actual stock condition or quantity differs materially from what was represented</li>
-      <li>We aim to complete evaluations within 48 hours of receiving complete stock details, though timelines may vary for large or complex lots</li>
-    </ul>
-
-    <h2>4. Payment &amp; Collection</h2>
-    <p>Once an offer is accepted, payment is made by cash or bank transfer at the point of collection, unless otherwise agreed in writing. Collection and logistics are arranged and paid for by Vantage Surplus Traders within Saudi Arabia and the GCC, subject to accessibility of the stock location.</p>
-
-    <h2>5. Seller Responsibilities</h2>
-    <ul>
-      <li>You confirm that you are the lawful owner of the stock, or are authorized to sell it on behalf of the owner</li>
-      <li>You agree to provide accurate information regarding quantity, condition and location of the stock</li>
-      <li>You are responsible for ensuring the stock is free of any liens, disputes or third-party claims</li>
-    </ul>
-
-    <h2>6. Website Use</h2>
-    <p>You agree to use this website only for lawful purposes and not to submit false, misleading or fraudulent information through our forms. We reserve the right to decline any evaluation request at our discretion.</p>
-
-    <h2>7. Limitation of Liability</h2>
-    <p>Vantage Surplus Traders is not liable for indirect, incidental or consequential damages arising from the use of this website or our services, to the fullest extent permitted by applicable law.</p>
-
-    <h2>8. Governing Law</h2>
-    <p>These terms are governed by the laws of the Kingdom of Saudi Arabia. Any disputes shall be subject to the exclusive jurisdiction of the courts of Riyadh, Saudi Arabia.</p>
-
-    <h2>9. Changes to These Terms</h2>
-    <p>We may revise these Terms of Service from time to time. Continued use of the website after changes are posted constitutes acceptance of the revised terms.</p>
-
-    <h2>10. Contact Us</h2>
-    <p>Questions about these terms can be sent to <a href="mailto:hello@vantagesurplus.com" style="color:var(--green-400);">hello@vantagesurplus.com</a>.</p>
+<section class="section section-alt">
+  <div class="container essay-block reveal">
+    <span class="eyebrow">Why It Matters</span>
+    <h3>The Longer Stock Sits, the Less It's Worth</h3>
+    <p>Surplus inventory doesn't just lose value from physical wear — it loses relevance. Product lines get superseded, seasons change, technology moves on, and storage costs quietly accumulate every month stock sits untouched. This calculator gives a rough, illustrative sense of that decay so you can decide whether it's time to act.</p>
+    <p>For an accurate, category-specific offer based on the real condition of your stock, request a free evaluation — our specialists respond within 48 hours.</p>
   </div>
 </section>
 
@@ -168,5 +159,46 @@
 </button>
 
 <script src="js/main.js"></script>
+<script>
+(function(){
+  const valueInput = document.getElementById('calcValue');
+  const monthsInput = document.getElementById('calcMonths');
+  const monthsOut = document.getElementById('monthsOut');
+  const categorySelect = document.getElementById('calcCategory');
+  const resultValue = document.getElementById('calcResultValue');
+  const resultPct = document.getElementById('calcResultPct');
+  const savingsEl = document.getElementById('calcSavings');
+
+  function formatSAR(n){
+    return 'SAR ' + Math.round(n).toLocaleString('en-US');
+  }
+
+  function calculate(){
+    const value = Math.max(0, parseFloat(valueInput.value) || 0);
+    const months = parseInt(monthsInput.value, 10);
+    const decayRate = parseFloat(categorySelect.value);
+
+    monthsOut.textContent = months;
+
+    // Illustrative decay model: starts near 30%, decays toward a 5% floor.
+    let pct = 30 - (months * 0.65 * decayRate);
+    pct = Math.max(5, Math.min(30, pct));
+
+    const recoverable = value * (pct / 100);
+    const storageSavings = value * 0.015 * months;
+
+    resultValue.textContent = formatSAR(recoverable);
+    resultPct.textContent = pct.toFixed(1);
+    savingsEl.textContent = formatSAR(storageSavings);
+  }
+
+  [valueInput, monthsInput, categorySelect].forEach(el => {
+    el.addEventListener('input', calculate);
+    el.addEventListener('change', calculate);
+  });
+
+  calculate();
+})();
+</script>
 </body>
 </html>
