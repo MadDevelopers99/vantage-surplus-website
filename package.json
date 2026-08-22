@@ -1,8 +1,8 @@
 {
-  "name": "vantage-surplus-website",
+  "name": "saudi-overstock-buyers-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Vantage Surplus Traders - static marketing website",
+  "description": "Saudi Overstock Buyers - static marketing website",
   "scripts": {
     "start": "serve . -l ${PORT:-3000}"
   },

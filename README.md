@@ -1,4 +1,4 @@
-# Vantage Surplus Traders — Website
+# Saudi Overstock Buyers — Website
 
 A professional, fully responsive B2B surplus marketplace website (buy & sell surplus/dead stock) built with plain HTML, CSS and JavaScript (no build step, no frameworks).
 
@@ -37,7 +37,7 @@ npx serve .
 `package.json` includes a `start` script (`serve . -l $PORT`) so platforms that expect a Node app — like Railway — can detect, install and run the site automatically. Remember to generate/enable a public domain in the host's networking settings after deploying.
 
 ## Notes — before going live
-- **Placeholder contact details**: the phone number (`+966 50 123 4567`), email addresses and office address (Riyadh, Saudi Arabia) are samples — replace with real business details.
+- **Placeholder contact details**: the office address (Riyadh, Saudi Arabia) and email addresses (`@saudioverstockbuyers.com`) are samples — replace with real business details. The phone/WhatsApp number (`+966 55 392 4479`) has been set to the real business number.
 - **Product listings & prices on `buy.html` / `index.html`**: sample data for demonstration only (no real inventory/checkout backend) — every "Buy Now" currently routes to the contact form. Replace with real listings and a payment flow before going live.
 - **Contact form**: currently validates and shows a success message client-side only (see the notice on the Contact page); connect it to a backend or a form service (e.g. Formspree) to receive real submissions.
 - **Social links**: LinkedIn/Facebook/Instagram icons in the footer are placeholders (no real profiles linked yet) — add real URLs once accounts exist.

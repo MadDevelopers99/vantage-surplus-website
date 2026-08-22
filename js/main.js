@@ -1,4 +1,4 @@
-/* Vantage Surplus Traders — main.js */
+/* Saudi Overstock Buyers — main.js */
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Navbar scroll state + mobile toggle ---- */
